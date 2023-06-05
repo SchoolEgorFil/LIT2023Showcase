@@ -191,13 +191,13 @@
 
                     </p>
                 </div>
-                <div>
+                <!-- <div>
                     <p> </p>
                     <p></p>
                     <p>
                         
                     </p>
-                </div>
+                </div> -->
             </div>
         </div>
         <div id="block4" class="bbb">
@@ -471,6 +471,14 @@
         box-sizing: border-box;
         width: auto;
         overflow: auto;
+    }
+
+    .bbb > div > div:not(.active)::after {
+        content: "Клацніть, щоб розгронути текст";
+        color: rgb(20, 20, 159);
+        text-align: end;
+        font-weight: 800;
+        display: block;
     }
 
 
